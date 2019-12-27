@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="site d'essai projet 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="HTML, CSS">
+    <link rel="stylesheet" type="text/css" href="webagency.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>WebAgency, l'agence de toutes vos envies!</title>
+    <script src="https://kit.fontawesome.com/8cd469e3bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Mettre le logo et le menu sur la même ligne -->
+    <nav>
+        <img id="logo" src="images/logo.png" alt="Logo webangency">
+        <ul id="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#nosservices">Services</a></li>
+            <li><a href="#Projet">Portfolio</a></li>
+            <li><a href="#adresse">Contact</a></li>
+        </ul>
+    </nav>
+	<header>
+    <!-- photo d'acceuil superposer des icone flêche -->
+    <div id="slider">
+        <!-- pour id slider style="background-color: white;" -->
+            <figure>
+                <img id="fille" src="images/slider/bg1.jpg" alt="Petite fille avec de la peinture">
+                <img id="garcon" src="images/slider/bg2.jpg" alt="Jeune garçon avec un mega-phone">
+            </figure>
+        <div id="flêches">
+            <div id="flechegauche" class="fleche">
+                <i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i>
+            </div>
+        <!-- intergrer un pseudo-élement befor after dans le css -->
+            <div id="flechedroite" class="fleche">
+                <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>
+            </div>
+        </div>
+    <div id="presentation">
+        <h1>
+            <span id="webagency">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS
+            <!-- color blue webagency -->
+        </h1>
+        <p>
+            Vous avez un projet web ? La WebAgency vous aide à le réaliser !
+        </p>
+        <p>
+            Plus d'infos
+        </p>
+        <!-- utiliser last-child pour cibler le dernier p et le mettre un contour -->
+    </div>
+</div>	
+    </header>
+
+
+		<section id="Nos-services">
+                <div class="Services">
+                    <h2>
+                        NOS SERVICES
+                    </h2>
+                    <div class="decoration">
+                        <hr>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Parce que vous êtes unique, nous nous adaptons à vos besoins et à vos envies. Notre plus grande qualité est l'écoute, et
+                        nous nous engageons à vous livrer un site web qui vous ressemble.
+                    </p>
+                </div>
+                <div id="Services">
+                    <div id="services-gauche">
+                        <img src="images/main-feature.png" alt="ordinateur Apple">
+                    </div>
+                    <div id="service-droite">
+                        <div class="paragraphe" id="ux">
+                            <div class="decoration">
+                                <i class="fa fa-line-chart fa-2x icon" aria-hidden="true"></i>
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="text">
+                                <h3>
+                                    UX design
+                                </h3>
+                                <p>
+                                    Nous pensons et concevons votre site web de manière à vous délivrer la meilleure expérience utilisateur possible.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="paragraphe" id="ui">
+                            <div class="decoration">
+                                <i class="fa fa-cubes fa-2x icon" aria-hidden="true"></i>
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="text">
+                                <h3>
+                                    UI design
+                                </h3>
+                                <p>
+                                    Nous sommes à l'écoute de vos envies et nous nous engageons à vous délivrer une interface utilisateur de qualité.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="paragraphe" id="seo">
+                            <div class="decoration">
+                                <i class="fa fa-pie-chart fa-2x icon" aria-hidden="true"></i>
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="text">
+                                <h3>
+                                    SEO
+                                </h3>
+                                <p>
+                                    Nous optimisons la visibilité de votre site web dans les pages de résultats des moteurs de recherche.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Nos-projets">
+                <div class="projet">
+                    <h2>
+                        NOS PROJETS
+                    </h2>
+                    <div class="deco">
+                        <hr>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Ils nous ont fait confiance et ne l'ont pas regretté ! <br> Voyez par vous-mêmes.
+                    </p>
+                    <ul>
+                        <li>All Works</li>
+                        <li>Creative</li>
+                        <li>Corporate</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+                <ul id="imagesProjets">
+                    <li>
+                        <figure class="portfolio">
+                            <img src="images/portfolio/01.jpg" alt="item de clown">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>Le clown.dev</strong> <br> Création d'un blog informatique
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="creative">
+                            <img src="images/portfolio/02.jpg" alt="item deguisement lapin">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>Anne-So pretty</strong> <br> Blog d'une web designer
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="creative">
+                            <img src="images/portfolio/03.jpg" alt="item logo">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>Original Pompadour</strong> <br> Création d'un site de partage d'oeuvres
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="portfolio">
+                            <img src="images/portfolio/04.jpg" alt="item plan de Marie">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>La poupée Marie</strong> <br> Wedding planning site
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="corporate">
+                            <img src="images/portfolio/05.jpg" alt="item sac de course">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>Zalando</strong> <br> Refonte d'une boutique en ligne 
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="corporate">
+                            <img src="images/portfolio/06.jpg" alt="item pont">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>Vinci autoroute</strong> <br> Développement d'une application mobile
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="creative">
+                            <img src="images/portfolio/07.jpg" alt="item de fusée">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>L'inventeur à la bonheur</strong> <br> Création d'un blog sur l'invention
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="portfolio">
+                            <img src="images/portfolio/08.jpg" alt="item affaire de travail">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>Architect Tech</strong> <br> Refonte du site d'un architecte 
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="corporate">
+                            <img src="images/portfolio/full.jpg" alt="item d'hamburguer">
+                            <figcaption>
+                                <div class="legende">
+                                    <strong>MacDonald's</strong> <br> Refonte du site du célèbre fast-food 
+                                </div>
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+        
+            <!-- map et formulaire de contact -->
+            <footer>
+            <section id="contact">
+                <div id="fondBleu">
+                    <aside>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.432855301346!2d2.343259550633897!3d48.87315057261226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1520845513058"  
+                                id="maps"
+                        allowfullscreen>
+                        </iframe>
+                        <div>
+                            <strong>Contact Info</strong>
+                            <div id="adresse">
+                                <span>WebAgency SAS</span> <br> 25 rue d'Hauteville 75010 Paris <br> Tel : 01 02 03 04 05
+                            </div>
+                        </div>
+                        <form method="POST" action="page.php">
+                            <!-- page.php est la page ou les renseignement seront envoyé en tant normal -->
+                            <p>
+                                <input type="text" placeholder="Name">
+                            </p>
+                            <p>
+                                <input type="text" placeholder="Email">
+                            </p>
+                            <p>
+                                <input type="text" placeholder="Subject">
+                            </p>
+                            <p>
+                                <textarea placeholder="Message" id="message"></textarea>
+                            </p>
+                            <div id="send">
+                                <input type="submit" value="Send message">
+                                <!-- send message doit avoir un background bleu -->
+                            </div>
+                       </form>
+                    </aside>
+                </div>
+            </section>
+        </footer>
+
+		<!-- <section id="section2">
+			<h2>NOS PROJETS</h2>
+			<div class="rond_bleu"></div>
+			<p>Vous trouverez ci-dessous un échantillon de nos projets les plus récents.</p>
+
+			<div id="Projet">
+				<ul>
+					<li><a href="#tous" >All works</a></li>
+					<li><a href="#creative" class="creative">Creative</a></li>
+					<li><a href="#corporate" class="corporate">Corporate</a></li>
+					<li><a href="#portfolio" class="portfolio">Portfolio</a></li>
+				</ul>
+			</div>
+
+			<div id="nos_projets">
+				<figure class="creative">
+					<img src="images/portfolio/01.jpg" alt="photographie 1" />
+
+					<figcaption>Une école de magie</figcaption>
+				</figure>
+				<figure class="creative">
+					<img src="images/portfolio/02.jpg" alt="photographie 2" />
+
+					<figcaption>La dernière création originale</figcaption>
+				</figure>
+				<figure class="portfolio">
+					<img src="images/portfolio/03.jpg" alt="photographie 3" />
+
+					<figcaption>Site officiel de la marque "Pompadour"</figcaption>
+				</figure>
+				<figure class="corporate">	
+					<img src="images/portfolio/04.jpg" alt="photographie 4" />
+
+					<figcaption>Un cabinet d'architecte</figcaption>
+				</figure>
+				<figure class="corporate">	
+					<img src="images/portfolio/05.jpg" alt="photographie 5" />
+
+					<figcaption>N'oublions pas le shopping..</figcaption>
+				</figure>
+				<figure class="creative">	
+					<img src="images/portfolio/06.jpg" alt="photographie 6" />
+
+					<figcaption>Ce site vous fera certainement voyager</figcaption>
+				</figure>
+				<figure class="portfolio">
+					<img src="images/portfolio/07.jpg" alt="photographie 7" />
+
+					<figcaption>Le blog d'un écrivain renommé</figcaption>
+				</figure>
+				<figure class="corporate">
+					<img src="images/portfolio/08.jpg" alt="photographie 8" />
+
+					<figcaption>Faire connaître son entreprise</figcaption>
+				</figure>
+			
+			
+		</div>
+		</section> -->
+
+
+		<!-- <footer>
+			<section id="section3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.432855301346!2d2.343259550633897!3d48.87315057261226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1520845513058"  
+                 id="maps"
+                  allowfullscreen></iframe>
+					<div id="adresse">
+						<h3>Contact Info</h3>
+						<p><em>WebAgency SAS</em></p>
+						<p>25 Rue d'Hauteville 75010 Paris</p>
+						<p>Tel:01 02 03 04 05</p>
+
+					
+						<form method="post" action="#">
+							<div class="field">
+								<label for="name"></label>
+									<input type="text" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<label for="email"></label>
+									<input type="text" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="subject">
+								<label for="subject"></label>
+									<input type="text" name="subject" id="subject" placeholder="Subject" />
+							</div>
+
+							<div class="field">
+								<label for="message"></label>
+									<textarea name="message" id="message" rows="10" cols="30" placeholder="Message"></textarea>
+							</div>
+							<div class="submit">
+								<input id="send_message" type="submit" value="Send Message" />
+							</div>
+						</form>
+					
+					</div>
+				
+			</section>
+		</footer> -->
+
+
+
+</body>
+</html>
