@@ -1,0 +1,501 @@
+html
+{
+    display: block;
+}
+
+body
+{
+    display: block;
+    margin: 0;
+    font-family: 'fontawesome-webfont', Arial, Helvetica, sans-serif;
+}
+
+/* header de l'HTML */
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 82px;
+}
+
+#logo
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* faire disparaitre les points du menu */
+#menu
+{
+    list-style-type: none;
+    display: flex;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+#menu li
+{
+    padding: 30px 10px;
+}
+#menu a
+{
+    text-decoration: none;
+}
+
+#slider
+{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#slider figure
+{
+    width: 200%;
+    margin: 0;
+    position: relative;
+}
+
+figure
+{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+#slider figure img
+{
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+#flêches
+{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#flêches .fleche i
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    color: white;
+}
+#flechegauche i
+{
+    padding-right: 15px;
+    text-align: right;
+    position: relative;
+    right: 40px;
+}
+#flechedroite i
+{
+    padding-left: 15px;
+    text-align: left;
+    position: relative;
+    left: 40px;
+}
+.fa-chevron-left, .fa-chevron-right
+{
+    color: white;
+}
+.fa
+{
+    display: inline-block;
+    color: #3BAED7;
+}
+
+#presentation
+{
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    color: white;
+}
+#presentation h1
+{
+    font-size: 30px;
+}
+
+h1
+{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#webagency
+{
+    color: #3BAED7;
+}
+#presentation p
+{
+    font-size: 16px;
+}
+#presentation p:last-child
+{
+    background-color: #3BAED7;
+    text-align: center;
+    padding: 10px;
+    width: 110px;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #1D8DB5;
+    cursor: pointer;
+}
+
+#Nos-services, #Nos-projets
+{
+    padding: 50px 0;
+    min-height: 650px;
+}
+
+.Services
+{
+    text-align: center;
+}
+
+h2
+{
+    font-size: 38px;
+}
+
+.Services .fa-circle
+{
+    position: relative;
+    bottom: 18px;
+}
+
+.fa-circle
+{
+    text-shadow: -5px 0 white, 0 5px white, 5px 0 white, 0 -5px white;
+}
+.Services p 
+{
+    width: 50%;
+    margin: auto;
+}
+section p, a, #adresse
+{
+    color: #63686D;
+}
+#Services
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px auto;
+    width: 85%;
+}
+#service-droite
+{
+    margin-top: 50px;
+}
+#service-droite .decoration
+{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+#Services.decoration
+{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.icon
+{
+    width: 80px;
+    height: 55px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid lightgrey;
+}
+
+.text
+{
+    max-width: 600px;
+}
+.text p
+{
+    margin-left: 100px;
+    text-align: justify;
+}
+
+#Nos-projets
+{
+    background-color: #F5F5F5;
+}
+.projet
+{
+    text-align: center;
+}
+.projet .fa-circle
+{
+    position: relative;
+    bottom: 18px;
+}
+.projet p
+{
+    width: 50%;
+    margin: auto;
+}
+hr
+{
+    width: 130px;
+    opacity: 0.5;
+}
+#Nos-projets .projet ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0;
+    width: auto;
+}
+#Nos-projets .projet li
+{
+    background-color: #E5E5E5;
+    padding: 10px;
+    margin-left: 0;
+}
+#Nos-projets .projet li:first-child
+{
+    border-radius: 4px 0 0 4px;
+}
+#Nos-projets .projet li:last-child
+{
+    border-radius: 0 4px 4px 0;
+}
+
+#Picture-Projets
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+#Picture-Projets li
+{
+    list-style-type: none;
+    width: 250px;
+    padding: 20px;
+}
+#Picture-Projets figure 
+{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#Picture-Projets img
+{
+    width: 100%;
+}
+#Picture-Projets figcaption 
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 4px;
+    display: none;
+}
+#Picture-Projets figure:hover figcaption 
+{
+    display: block;
+
+}
+
+.legende 
+{
+    font-size: 13px;
+}
+#Picture-Projets strong
+{
+    font-size: 18px;
+}
+.fa-eye 
+{
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3BAED7;
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: 70px;
+}
+#contact
+{
+    background-color: rgba(120, 190, 255, 0.3);
+    height: 650px;
+    justify-content: space-between;
+}
+#map iframe
+{
+    width: 100%;
+    height: 641px;
+    border: 0;
+    flex: 1;
+}
+aside
+{
+    background-color: rgba(255, 255 ,245, 0.8);
+    width: 360px;
+    padding: 20px;
+    float: right;
+    position: relative;
+    right: 145px;
+    margin-top: -600px;
+}
+#formulaire
+{
+    background-color: rgba(255, 255 ,245, 0.8);
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+#contact strong
+{
+    font-size: 26px;
+}
+#adresse
+{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+input
+{
+    width: 95%;
+    margin-bottom: 15px;
+}
+#message
+{
+    height: 150px;
+    width: 95%;
+    min-width: 190px;
+    border-color: lightgrey;
+    margin-bottom: 15px;
+}
+
+#send input
+{
+    background-color: #3BAED7;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #1D8DB5;
+    cursor: pointer;
+}
+
+@media (max-width: 768px)
+{
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+    }
+    nav {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    button 
+    {
+        background-color: rgb(107, 177, 215);
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 19px 63px 4px 0;
+        height: 34px;
+        padding: 10px 12px 15px 12px;
+        position: relative;
+    }
+}
+
+@media (max-width: 767px)
+{
+    #slider img, #flêches 
+    {
+        display: none;
+    }
+    #presentation
+    {
+        position: static;
+        color: #63686D;
+        width: 100%;
+        margin-left: 30px;
+    }
+}
+@media (max-width: 768px)
+{
+    nav 
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        padding-top: 0px;
+    }
+    #menu 
+    {
+        font-size: 85%;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    #services-gauche
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+	
+	/* #ordinateur{
+		display: none;
+	} */
+	nav{
+		display: inline-flex;
+		float: left;
+		padding-top: 20px;
+		font-size: 1.5em;
+	}
+	#banniere_image{
+		width: 20%;
+	}
+	#map{
+		width: 50%;
+    }
+}
